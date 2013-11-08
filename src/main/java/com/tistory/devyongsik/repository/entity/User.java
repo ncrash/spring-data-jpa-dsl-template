@@ -20,7 +20,7 @@ public class User {
 	private String email;
 	
 	@ManyToOne
-	@JoinColumn(name = "userManagerId")
+	@JoinColumn(name = "userManagerId", nullable=false, insertable=true, updatable=false)
 	private UserManager userManager;
 	
 	public UserManager getUserManager() {
