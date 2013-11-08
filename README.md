@@ -8,3 +8,5 @@ Project Template for WebApplications
 * Spring
 * HSQL (embedded)
 * QueryDSL
+
+spring-data-jpa-dsl-template
