@@ -3,14 +3,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.ConfigurableEnvironment;
 
 
 @Configuration
-@ImportResource({"classpath:test-spring-root.xml"})
-@PropertySource({"classpath:test-application.properties"})
+@ImportResource({"classpath:simple-repository-context.xml"})
 public class AbstractRepositoryTestApplicationContextConfig {
 
 	@Autowired

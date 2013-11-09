@@ -1,10 +1,11 @@
 package com.tistory.devyongsik.repository;
 
+import static org.junit.Assert.*;
+
 import java.util.List;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
 
 import com.google.common.collect.Lists;
 import com.tistory.devyongsik.repository.entity.User;
@@ -35,7 +36,7 @@ public class UserManagerRepositoryTest extends AbstractRepositoryTest {
 		
 		UserManager savedUserManager = userManagerRepository.save(userManager);
 		
-		Assert.notNull(savedUserManager);
+		assertNotNull(savedUserManager);
 	}
 
 }
